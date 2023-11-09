@@ -1,21 +1,11 @@
-import { Stack, useRouter } from 'expo-router';
-import { Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { ActivityIndicator, View } from 'react-native';
 
-const Home = () => {
-  const router = useRouter()
+const StartPage = () => {
   return (
-    <SafeAreaView>
-      <Stack.Screen
-        options={{
-          headerShadowVisible: false,
-          headerTitle: "Home"
-          
-        }}
-      />
-      <Text>Helo There</Text>
-    </SafeAreaView>
+    <View style={{ flex: 1, justifyContent: 'center' }}>
+      <ActivityIndicator size="large" color="#0000ff" />
+    </View>
   );
-}
+};
 
-export default Home
+export default StartPage;
