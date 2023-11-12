@@ -6,8 +6,6 @@ const One = () => {
     const router = useRouter()
     return (
     <SafeAreaView>
-        <Text style={{ fontSize: 20 }}>This is tab one</Text>
-        <Button title='Back' onPress={() => router.back()}/>
     </SafeAreaView>
     );
 }

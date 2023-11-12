@@ -5,7 +5,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 const Two = () => {
   return (
     <SafeAreaView>
-      <Text style={{ fontSize: 20 }}>This is tab two</Text>
     </SafeAreaView>
   );
 }

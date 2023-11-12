@@ -5,7 +5,6 @@ import React, {useState} from 'react'
 import { useAuth } from '../context/AuthContext';
 
 const Login = () => {
-  const router = useRouter()
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const {onLogin} = useAuth()
