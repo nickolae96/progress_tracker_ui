@@ -1,12 +1,21 @@
-import { Stack, useRouter } from 'expo-router';
-import { Text } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import React from 'react';
+import { SafeAreaView, StyleSheet } from 'react-native';
+import CalendarComponent from '../../../src/components/Calendar';
 
-const Two = () => {
+const Tracker: React.FC = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
+      {/* Your other UI elements can go here */}
+      <CalendarComponent />
     </SafeAreaView>
   );
-}
+};
 
-export default Two
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+});
+
+export default Tracker;
